@@ -14,6 +14,10 @@ class Item
     @color
   end
 
+  def price
+    @price
+  end
+
   def price=(number)
     @price = number
   end
@@ -26,3 +30,7 @@ end
 piano = Item.new("black", 4000, "music")
 desk = Item.new("brown", 560, "furniture")
 lamp = Item.new("white", 75, "lighting")
+
+p piano.color
+p desk.price
+p lamp.department

@@ -4,10 +4,13 @@
 # p piano[color:]
 
 class Item
-  def initialize(color, price, department)
-    @color = color
-    @price = price
-    @department = department
+  attr_reader :color, :price, :department
+  attr_writer :price
+
+  def initialize(input_options)
+    @color = input_options[:color]
+    @price = input_options[:price]
+    @department = input_options[:department]
   end
 
   def color

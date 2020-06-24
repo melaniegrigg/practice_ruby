@@ -30,3 +30,4 @@ puts lamp.price = 48930293
 
 moving = LivingRoom.new(color: "black", price: 4000, department: "music", production_date: "July 4, 2016")
 p moving.color
+p moving.department

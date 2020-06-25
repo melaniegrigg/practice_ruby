@@ -32,3 +32,10 @@ class Bike
     puts "Ring ring!"
   end
 end
+
+huffy = Bike.new
+honda = Car.new
+
+p huffy.turn("south")
+p honda.honk_horn
+p honda.speed

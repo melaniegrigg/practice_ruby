@@ -1,8 +1,5 @@
-# piano = { color: :black, price: 4000, department: :music }
-# desk = { color: :brown, price: 560, department: :furniture }
-# lamp = { color: :white, price: 75, department: :lighting }
-# p piano[color:]
 require_relative "item.rb"
+require_relative "living_room.rb"
 
 piano = Item.new(color: "black", price: 4000, department: "music")
 desk = Item.new(color: "brown", price: 560, department: "furniture")

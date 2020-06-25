@@ -39,6 +39,10 @@ class Manager < Employee
     @employees.each do |employee|
       employee.give_annual_raise
     end
+  
+  def fire
+    @employees.each do |employee|
+      employee.active = false
   end
 end
 
@@ -48,4 +52,4 @@ manager.send_report
 
 puts employee1.salary
 puts employee2.salary
-manager.give_all_raises
+manager.give_all_raisesRealityW

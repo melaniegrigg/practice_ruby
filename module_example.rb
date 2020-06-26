@@ -15,6 +15,10 @@ module Actionable
   def turn(new_direction)
     @direction = new_direction
   end
+
+  def speed(input)
+    @speed = input
+  end
 end
 
 class Car
@@ -38,4 +42,4 @@ honda = Car.new
 
 p huffy.turn("south")
 p honda.honk_horn
-p honda.speed
+p honda.speed(10)
